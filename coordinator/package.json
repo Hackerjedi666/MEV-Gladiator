@@ -1,0 +1,26 @@
+{
+  "name": "coordinator",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "bun run --watch src/index.ts",
+    "start": "bun run src/index.ts",
+    "smoke": "bun run src/__tests__/smoke.ts",
+    "replay": "bun run src/replay.ts",
+    "replay:smoke": "bun run src/__tests__/replay-smoke.ts",
+    "test:live": "bun run src/__tests__/live-mempool.test.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@pit/shared": "workspace:*",
+    "viem": "^2.21.0",
+    "pino": "^9.4.0",
+    "pino-pretty": "^11.2.0",
+    "dotenv": "^16.4.5"
+  },
+  "devDependencies": {
+    "typescript": "^5.4.0",
+    "bun-types": "latest"
+  }
+}

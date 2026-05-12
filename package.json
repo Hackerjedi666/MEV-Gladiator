@@ -1,0 +1,19 @@
+{
+  "name": "mev-gladiator-pit",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "build": "pnpm -r build",
+    "dev:coordinator": "pnpm --filter coordinator dev",
+    "dev:dashboard": "pnpm --filter dashboard dev",
+    "dev:bots": "echo 'See /bots/README.md to run individual bots'",
+    "deploy": "make deploy",
+    "seed": "make seed",
+    "demo": "bash scripts/start-all.sh"
+  },
+  "devDependencies": {
+    "typescript": "^5.4.0",
+    "@types/node": "^20.11.0"
+  },
+  "packageManager": "pnpm@9.0.0"
+}

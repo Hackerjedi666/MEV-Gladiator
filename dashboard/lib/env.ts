@@ -1,0 +1,5 @@
+export const COORDINATOR_HTTP =
+  process.env.NEXT_PUBLIC_COORDINATOR_HTTP ?? "http://localhost:3001";
+
+export const COORDINATOR_WS =
+  process.env.NEXT_PUBLIC_COORDINATOR_WS ?? "ws://localhost:3001/dashboard";

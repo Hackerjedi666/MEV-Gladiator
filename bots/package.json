@@ -1,0 +1,27 @@
+{
+  "name": "bots",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "random": "bun run random.ts",
+    "arb": "bun run naive-arb.ts",
+    "sandwich": "bun run naive-sandwich.ts",
+    "liquidator": "bun run liquidator.ts",
+    "jit": "bun run jit-lp.ts",
+    "whale": "bun run whale-watch.ts",
+    "smoke": "bun run lib/__tests__/smoke.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@pit/shared": "workspace:*",
+    "viem": "^2.21.0",
+    "pino": "^9.4.0",
+    "pino-pretty": "^11.2.0",
+    "dotenv": "^16.4.5"
+  },
+  "devDependencies": {
+    "typescript": "^5.4.0",
+    "bun-types": "latest"
+  }
+}

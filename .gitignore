@@ -1,0 +1,53 @@
+# ─── Node / pnpm ─────────────────────────────────────────────
+node_modules/
+.pnpm-store/
+.pnpm-debug.log*
+
+# ─── Build artifacts ─────────────────────────────────────────
+dist/
+build/
+out/
+.next/
+*.tsbuildinfo
+
+# ─── Env / secrets ──────────────────────────────────────────
+.env
+.env.*
+!.env.example
+
+# ─── Logs ──────────────────────────────────────────────────
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# ─── OS / editor ────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# ─── Foundry (contracts) ────────────────────────────────────
+contracts/out/
+contracts/cache/
+contracts/broadcast/
+contracts/lib/
+
+# Keep the deployments directory structure but ignore live deploys.
+# Drop a sample artifact in deployments/ if you want one committed.
+contracts/deployments/*.json
+
+# ─── Coordinator runtime ───────────────────────────────────
+coordinator/recordings/round-*.jsonl
+
+# ─── Vercel ─────────────────────────────────────────────────
+.vercel/
+
+# ─── Tooling local state ───────────────────────────────────
+.claude/
+.cursor/
+
+# ─── Misc ──────────────────────────────────────────────────
+*.local

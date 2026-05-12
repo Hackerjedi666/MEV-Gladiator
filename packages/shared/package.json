@@ -1,0 +1,27 @@
+{
+  "name": "@pit/shared",
+  "version": "0.1.0",
+  "private": true,
+  "main": "./src/index.ts",
+  "types": "./src/index.ts",
+  "exports": {
+    ".": "./src/index.ts",
+    "./types": "./src/types.ts",
+    "./messages": "./src/messages.ts",
+    "./constants": "./src/constants.ts",
+    "./serde": "./src/serde.ts",
+    "./validation": "./src/validation.ts",
+    "./deployments": "./src/deployments.ts"
+  },
+  "scripts": {
+    "build": "tsc",
+    "typecheck": "tsc --noEmit",
+    "smoke": "bun run src/__tests__/smoke.ts"
+  },
+  "dependencies": {
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "typescript": "^5.4.0"
+  }
+}

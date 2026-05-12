@@ -1,0 +1,5 @@
+dist/
+*.tsbuildinfo
+recordings/round-*.jsonl
+.env*
+!.env.example
